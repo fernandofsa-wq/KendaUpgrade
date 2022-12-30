@@ -1,2 +1,0 @@
-# KendaUpgrade
-Upgrade Site Kenda
