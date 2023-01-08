@@ -1,0 +1,58 @@
+{% load static %}
+<header>
+    <!-- DropDown L-->
+    <ul id="eventos" class="dropdown-content">
+        {% block 'eventolinks' %}
+        {% for ver_evento in evento %}
+        {% include 'homepage/partials/eventoslinks.html' %}
+        {% endfor %}
+        {% endblock 'eventolinks' %}
+
+    </ul>
+     <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+
+                <a href="#home" class="brand-logo"><img src="{% static 'homepage/img/kendalogo.png'%}" class="menu-logo" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class='bx bx-menu icon-menu'></i>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a  class="scroll"  href="#home">Home</a></li>
+                        
+                        <li><a  class="scroll"  href="#sobre">{{sobre.titulo}}</a></li>
+                        <li><a href="../../kendaexperience">Kenda Experience</a></li>
+                        <li><a href="../../midia">Mídias</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="eventos">Anteriores<i
+                                    class="fa-solid fa-chevron-down menu-drop-icon"></i></a></li>
+                        
+                        <li><a href="inscricao">Inscrições</a></li>
+                        <li><a href="regulamento">Informações</a></li>
+                        <li><a href="../../esg">E.S.G.</a></li>
+                        
+                        
+                        <a  href="#contato" class="btn scroll">Contato</a>
+                    </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="scroll" href="#home">Home</a></li>
+        <li><a class="scroll" href="#sobre">{{sobre.titulo}}</a></li>
+        <li><a href="../../kendaexperience">Kenda Experience</a></li>
+        <li><a href="../../midia">Mídias</a></li>
+        <li><a href="eventos">Anteriores</a></li>
+        <li><a href="inscricao">Inscrições</a></li>
+        <li><a href="regulamento">Informações</a></li>
+        <li><a href="../../esg">E.S.G.</a></li>
+        
+        
+        <div class="row">
+            <br>
+            <div class="col s3"></div>
+            <div class="col s6"><a href="#contato" class="btn pulse center scroll">Contato</a></div>
+            <div class="col s3"></div>
+        </div>
+    </ul>
+</header>
