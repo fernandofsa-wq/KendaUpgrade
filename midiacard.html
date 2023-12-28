@@ -1,0 +1,20 @@
+{% block 'midia' %}
+<div class="col l4">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="card-image">
+            <div class="cropped">
+              <img src="{{midia.img.url}}">
+            </div>
+            <span class="card-title">{{midia.titulo}}</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red" href="{% url 'midiafotos' midia.id%}"><i class='bx bx-play '></i></a>
+          </div>
+          <div class="card-content">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock 'midia' %}
