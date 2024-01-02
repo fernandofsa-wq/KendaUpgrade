@@ -1,0 +1,14 @@
+{% block 'slide' %}
+<li>
+    <img class="hide-on-med-and-up" src="{{slider.covermobile.url}}"> <!-- random image -->
+    <img class="show-on-medium-and-up" src="{{slider.coverweb.url}}"> <!-- random image -->
+    <div class="caption left-align">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="hide-on-med-and-down"><br><br><br></div>
+        <h3>{{slider.titulo}}</h3>
+        <h5 class="light grey-text text-lighten-3">{{slider.subtitulo}}</h5>
+        <br>
+        <a href="{{inscrever.link}}" class="btn-large  pulse">Inscrever</a>
+    </div>
+</li>
+{% endblock 'slide' %}
